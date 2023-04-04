@@ -8,5 +8,6 @@ cd CQ-editor && git apply ../cq-editor-pip.diff && cd ..
 rm -rf cadquery_venv
 python3 -m venv cadquery_venv
 source cadquery_venv/bin/activate
-pip install --use-pep517 --pre git+https://github.com/CadQuery/cadquery.git
-pip install --use-pep517 ./CQ-editor
+pip install wheel
+pip install git+https://github.com/CadQuery/cadquery.git
+pip install ./CQ-editor
